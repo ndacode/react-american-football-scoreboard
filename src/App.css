@@ -1,13 +1,18 @@
 :root {
   --black: #0d0d0d;
-  --red: #ff2d2b;
+  --red: lightblue;
+}
+
+.container {
+  background-color: steelblue;
+
 }
 
 .scoreboard {
   width: 58%;
   margin: 10rem auto;
-  background-color: #0b5402;
-  color: white;
+  background-color: whitesmoke;
+  color: green;
   border-radius: 0.5rem;
   margin-top: 10rem;
   padding: 5rem;
@@ -34,11 +39,16 @@
 }
 
 .home {
-  background-color: #656565;
+  background-color: whitesmoke;
+}
+
+img {
+  width: 270px;
+  height: 250px;
 }
 
 .away {
-  background-color: #af750a;
+  background-color: whitesmoke;
 }
 
 .home__name,
@@ -73,11 +83,18 @@
   border-radius: 6px;
 }
 
-.bottomRow {
+.bottomRowHome {
   display: flex;
   justify-content: space-around;
   place-items: center;
-  height: 20rem;
+  height: 15rem;
+}
+
+.bottomRowAway {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  height: 15rem;
 }
 
 .down,
@@ -110,6 +127,7 @@
   width: 50%;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -118,5 +136,6 @@
 .awayButtons__touchdown,
 .awayButtons__fieldGoal {
   margin: 1rem;
+  width: 20rem;
   border-radius: 4px;
 }
